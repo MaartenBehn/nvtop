@@ -2065,7 +2065,7 @@ bool show_information_messages(unsigned num_messages, const char **messages) {
 void print_snapshot(struct list_head *devices, bool use_fahrenheit_option) {
   gpuinfo_populate_static_infos(devices);
   gpuinfo_refresh_dynamic_info(devices);
-  sleep(1);
+  sleep(10);
   gpuinfo_refresh_dynamic_info(devices);
   struct gpu_info *device;
 
